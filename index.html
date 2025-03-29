@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Patterson Orchards - Fresh, organic fruits straight from our farm to your table."
+		/>
+		<title>Patterson Orchards</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Patterson Orchards</h1>
+			<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+			<nav id="nav-menu">
+				<a
+					onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth', block: 'start' })"
+					>About</a
+				>
+				<a
+					onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth', block: 'start' })"
+					>Gallery</a
+				>
+				<a
+					onclick="document.getElementById('visit').scrollIntoView({ behavior: 'smooth', block: 'start' })"
+					>Visit</a
+				>
+			</nav>
+		</header>
+		<script>
+			function toggleMenu() {
+				const nav = document.getElementById("nav-menu");
+				nav.classList.toggle("show");
+			}
+		</script>
+		<section class="hero">
+			<h2>Fresh From Our Orchard To Your Table</h2>
+		</section>
+		<section class="content section" id="about">
+			<h2>About Us</h2>
+			<p>
+				We provide the freshest organic fruits straight from our farm. Visit us
+				to experience the best nature has to offer!
+			</p>
+			<a
+				onclick="document.getElementById('visit').scrollIntoView({ behavior: 'smooth', block: 'start' })"
+				class="cta"
+				>Visit Us</a
+			>
+		</section>
+		<section class="grid section" id="gallery">
+			<img
+				src="https://s3-media0.fl.yelpcdn.com/bphoto/tJlGDNRbFjyWZkGMfaQjFQ/o.jpg"
+				alt="Pumpkin Patch"
+			/>
+			<img
+				src="https://s3-media0.fl.yelpcdn.com/bphoto/W0IbawTZ9GHGiiiK7SNvWQ/o.jpg"
+				alt="Inside the shop"
+			/>
+			<img
+				src="https://s3-media0.fl.yelpcdn.com/bphoto/hYyNgmYEHxmpPArleU4DSQ/o.jpg"
+				alt="Sign"
+			/>
+			<img
+				src="https://s3-media0.fl.yelpcdn.com/bphoto/aZEeyAQ85s95MAqGX-kupQ/o.jpg"
+				alt="Food"
+			/>
+			<img
+				src="https://s3-media0.fl.yelpcdn.com/bphoto/5szywPwSo7P1REYicDkayA/o.jpg"
+				alt="Honey/Syrups"
+			/>
+			<img
+				src="https://s3-media0.fl.yelpcdn.com/bphoto/ZpuaKpyEluc5NsIMyVfH_g/o.jpg"
+				alt="Farmers Market"
+			/>
+		</section>
+
+		<div class="content section" id="reviews">
+			<h2 style="text-align: left">Customer Reviews</h2>
+			<div class="review">
+				<div class="review-header">
+					<img
+						src="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_64x64_v2@2x.yji-cfb49ee371b5b7711e94.png"
+						alt="Profile picture"
+						class="profile-pic"
+					/>
+					<div class="review-info">
+						<p class="reviewer-name">Mary D.</p>
+						<div class="stars">
+							<!-- You can add a number of stars based on the rating -->
+							<span>⭐⭐⭐⭐⭐</span>
+						</div>
+					</div>
+				</div>
+				<p class="review-text">
+					"Awesome! Fresh Apples. Many varieties. Other fruits and veggies are
+					sold here too. Pleasant employees"
+				</p>
+			</div>
+
+			<div class="review">
+				<div class="review-header">
+					<img
+						src="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_64x64_v2@2x.yji-cfb49ee371b5b7711e94.png"
+						alt="Profile picture"
+						class="profile-pic"
+					/>
+					<div class="review-info">
+						<p class="reviewer-name">Virginia S.</p>
+						<div class="stars">
+							<span>⭐⭐⭐⭐</span>
+						</div>
+					</div>
+				</div>
+				<p class="review-text">
+					"Fantastic products and service! Great customer service and wonderful
+					apple cider for spiced mulled cider The caramel apples are to die for!
+					I also love the cherries"
+				</p>
+			</div>
+
+			<div class="review">
+				<div class="review-header">
+					<img
+						src="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_64x64_v2@2x.yji-cfb49ee371b5b7711e94.png"
+						alt="Profile picture"
+						class="profile-pic"
+					/>
+					<div class="review-info">
+						<p class="reviewer-name">Kim O.</p>
+						<div class="stars">
+							<span>⭐⭐⭐⭐</span>
+						</div>
+					</div>
+				</div>
+				<p class="review-text">
+					"OMG! So pleased with this place. My kids and I had a wonderful
+					experience. It was so nice to buy not only apples, but vegetables, and
+					jelly, and fresh popcorn. Do not leave without buying the APPLE CIDER
+					DOUGHNUTS! They are amazing! I think I ate six of them. They were that
+					good. We will be back not next year, but next week."
+				</p>
+			</div>
+
+			<!-- More reviews can go here -->
+		</div>
+
+		<section class="content section" id="visit">
+			<h2>Visit Us</h2>
+			<p>4607 S 124th St New Berlin, WI. <br />Open from 9:00AM to 5:30PM!</p>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.822785412255!2d-88.07245772324663!3d42.96093879692765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88050ee0977237d5%3A0x7b8ef690321dbbf9!2s4607%20S%20124th%20St%2C%20New%20Berlin%2C%20WI%2053151!5e0!3m2!1sen!2sus!4v1743229320417!5m2!1sen!2sus"
+				width="600"
+				height="450"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+		</section>
+		<footer class="footer">
+			<p>
+				Contact us at
+				<a href="tel:414-425-0563" style="color: #4caf50; text-decoration: none"
+					>(414) 425-0563</a
+				>
+				| Site made with ❤️.
+			</p>
+		</footer>
+	</body>
+</html>
